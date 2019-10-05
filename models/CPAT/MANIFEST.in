@@ -1,0 +1,54 @@
+include distribute_setup.py
+recursive-include src *.h
+recursive-include src *.c
+recursive-include lib *.h
+recursive-include lib *.c
+recursive-include lib *.pyx
+recursive-include doc *
+
+include MANIFEST.in
+include LICENSE.txt
+include README.txt
+include distribute-0.6.10.tar.gz
+include dat/*
+include test/*
+include lib/pysam/csamtools.pxd
+include lib/pysam/csamtools.pyx
+include lib/pysam/csamtools.c
+include lib/pysam/ctabix.pxd
+include lib/pysam/ctabix.c
+include lib/pysam/ctabix.pyx
+include lib/pysam/TabProxies.c
+include lib/pysam/TabProxies.pyx
+include lib/pysam/TabProxies.pxd
+include lib/pysam/cvcf.pyx
+include lib/pysam/cvcf.pxd
+include lib/pysam/cvcf.c
+include lib/pysam/pysam_util.h
+include lib/samtools/*.h
+include lib/samtools/*/*.h
+include lib/tabix/*.h
+
+# pysam tests
+include lib/tests/00README.txt
+include lib/tests/Makefile
+include lib/tests/ex1.fa
+include lib/tests/ex1.sam.gz
+include lib/tests/ex3.sam
+include lib/tests/ex4.sam
+include lib/tests/ex5.sam
+include lib/tests/ex6.sam
+include lib/tests/ex7.sam
+include lib/tests/ex8.sam
+include lib/tests/ex9_fail.bam
+include lib/tests/ex9_nofail.bam
+include lib/tests/ex10.sam
+include lib/tests/example.py
+include lib/tests/pysam_test.py
+include lib/tests/segfault_tests.py
+
+# tabix tests
+include lib/tests/tabix_test.py
+include lib/tests/example.gtf.gz
+include lib/tests/example.gtf.gz.tbi
+

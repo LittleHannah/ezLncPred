@@ -1,0 +1,24 @@
+Installation guide for CPAT (Coding Potential Assessing Tool))
+
+Prerequisite:
+   * python2.7
+   * numpy
+   * If your computer can not connnect to internet, nose>= 0.10.4 and distribute-0.6.10 are also required. 
+   * R
+   * pip
+
+Install CPAT hosted on PyPI, run:
+
+$ pip install CPAT
+
+Alternatively, you could download CPAT-VERSION.tar.gz (https://sourceforge.net/projects/rna-cpat/files/?source=navbar) first and then run:
+
+$ pip install CPAT-VERSION.tar.gz
+
+Online Manual:
+
+http://rna-cpat.sourceforge.net/
+
+Contact:
+Liguo Wang: wangliguo78@gmail.com
+Jung Hyun Park: hjpark@bcm.edu

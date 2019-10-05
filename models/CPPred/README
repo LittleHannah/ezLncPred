@@ -1,0 +1,47 @@
+
+  +---------------------------------------------------------------------+
+  | CPPred:coding potential prediction                                  |
+  |                                                                     |
+  |                 http://rnabinding.com/CPPred                        | 
+  +---------------------------------------------------------------------+
+
+
+1) Introduction
+
+CPPred is a coding potential prediction tool, which is based on SVM to distinguish
+ncRNAs from coding RNAs using sequence features, such as ORF length, ORF coverage, 
+ORF integrity, Fickett score, Hexamer score, PI, Gravy, Instability index and 
+CTD-encoded features.
+
+2) Uncompress and usage of CPPred
+
+tar -zxvf CPPred.tar.gz
+
+cd CPPred/bin
+
+python CPPred.py -i input_RNA.fa -hex Hexamer.tsv -r range -m model -spe species -o result
+
+(Here, "input_RNA.fa" is RNAs file in FASTA format. "Hexamer.tsv" is a pre-built hexamer 
+frequency table. "range" is pre-built training range file. "model" is pre-built training model. 
+"species" is the model of the species to choose (Human,Integrated). The "result" file in it 
+is the final result for each prediction.)
+
+3) Example
+python CPPred.py -i ../data/Human_coding_RNA_test.fa  -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o Human_coding.result 
+python CPPred.py -i ../data/Human_ncrna_test.fa -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o Human_ncrna.result 
+
+python CPPred.py -i ../data/Mouse_coding_RNA_test.fa  -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o Mouse_coding.result 
+
+python CPPred.py -i ../data/Zebrasfish_coding_RNA_test.fa  -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o Zebrafish_coding.result 
+
+python CPPred.py -i ../data/S.cerevisiae_coding_RNA_test.fa  -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o S.cerevisiae_coding.result 
+
+python CPPred.py -i ../data/Fruit_fly_coding_RNA_test.fa  -hex ../Hexamer/Human_Hexamer.tsv -r ../Human_Model/Human.range -mol ../Human_Model/Human.model -spe Human -o Fruit_fly_coding.result 
+
+python CPPred.py -i ../data/Integrated_coding_RNA_test.fa  -hex ../Hexamer/Integrated_Hexamer.tsv -r ../Integrated_Model/Integrated.range -mol ../Integrated_Model/Integrated.model -spe Integrated -o Integrated_coding.result 
+python CPPred.py -i ../data/Integrated_ncRNA_test.fa  -hex ../Hexamer/Integrated_Hexamer.tsv -r ../Integrated_Model/Integrated.range -mol ../Integrated_Model/Integrated.model -spe Integrated -o Integrated_coding.result 
+
+
+Contact: liushiyong@gmail.com 
+
+Date: 2018-05-17
