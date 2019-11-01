@@ -1,6 +1,6 @@
-#***LncPac*** An integrated python package and web server for LncRNA identification
+# ***LncPac*** An integrated python package and web server for LncRNA identification
 
-
+-------------------
 *LncPac* is an comprehensive python package for LncRNA identification which integrate 9 state-of-the-art lncRNA prediction models. *LncPac* python package provides a convenient command line method for researchers who intends to identify LncRNA. The *LncPac* web server tool provides a straight-to-the-point answer for input `fasta` file, or an email for time-consuming identification task.
 
 Integration
