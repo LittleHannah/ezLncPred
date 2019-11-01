@@ -4,8 +4,8 @@
 
 *LncPac* is an comprehensive python package for LncRNA identification which integrate 9 state-of-the-art lncRNA prediction models. *LncPac* python package provides a convenient command line method for researchers who intends to identify LncRNA. The *LncPac* web server tool provides a straight-to-the-point answer for input `fasta` file, or an email for time-consuming identification task.
 
-##Integration
-
+Integration
+-------------------------------
 
 
 *LncPac* currently provides 9 LncRNA prediction models, which are listed as follows. 
@@ -20,7 +20,7 @@
  - PredLnc-GFStack
  - LncADeep
 
-##Web server
+Web server
 ------------
 
 
@@ -39,7 +39,7 @@
 pip install LncPac
 ```
 
-##Help
+Help
 --------------------
 
 For detailed message of *LncPac*, run
@@ -54,7 +54,7 @@ For detailed message of each model and their parameters, run
 LncPac  --manual -m [model]
 ```
 
-##Usage
+Usage
 ----------------------
 
 *LncPac* offers a total of 9 LncRNA prediction models, each with a different variety of parameter choices, users can refer to the list below to customarize your prediction procedure.
