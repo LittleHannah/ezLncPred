@@ -72,6 +72,7 @@ Individual model parameters
  - `-d` or `--directory` specify the path of your reference genome if your input file is gtf format
  - `--parallel` assign the running CUP numbers
 <br>
+
 example
 ```bash
 LncPac -m CNCI -i example.fa -o results
@@ -96,6 +97,7 @@ LncPac -m lgc -i example.fa -o results/lgc_outfile
  - `--isoutmsg` output message to stdout or not, the existence of this parameter means that PLEK will be run quietly
  - `isrmtempfile` remove temporary files or not, the existence of this parameter means that PLEK programme will remove all temporary files
 <br>
+
 example
 ```bash
 LncPac -m PLEK -i example.fa -o results/PLEK_outfile
@@ -106,6 +108,7 @@ LncPac -m PLEK -i example.fa -o results/PLEK_outfile
  - `-s` or `--start` Start codon (DNA sequence, so use 'T' instead of 'U') used to define open reading frame (ORF), default is ATG
  - `-t` or `--stop` Stop codon (DNA sequence, so use 'T' instead of 'U') used to define open reading frame (ORF). Multiple stop codons should be separated by ',' default is TAG,TAA,TGA
 <br>
+
 example
 ```bash
 LncPac -i example.fa -m CPAT -o results/CPAT_outfile -p Human
