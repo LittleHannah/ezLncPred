@@ -21,7 +21,7 @@
  - LncADeep
 
 ##Web server
-
+------------
 
 
 ##Python package installation
@@ -40,7 +40,7 @@ pip install LncPac
 ```
 
 ##Help
-
+--------------------
 
 For detailed message of *LncPac*, run
 
@@ -55,7 +55,7 @@ LncPac  --manual -m [model]
 ```
 
 ##Usage
-
+----------------------
 
 *LncPac* offers a total of 9 LncRNA prediction models, each with a different variety of parameter choices, users can refer to the list below to customarize your prediction procedure.
 First, *LncPac* **must** receive at least three parameters to specify the `input file` `output directory` and `prediction model`
@@ -71,6 +71,7 @@ Individual model parameters
  - `-g` or `--gtf`  if your input file is gtf format please use this parameter
  - `-d` or `--directory` specify the path of your reference genome if your input file is gtf format
  - `--parallel` assign the running CUP numbers
+<br>
 example
 ```bash
 LncPac -m CNCI -i example.fa -o results
@@ -94,6 +95,7 @@ LncPac -m lgc -i example.fa -o results/lgc_outfile
  - `-z` or `--size` minimum sequence size to consider, default is 200
  - `--isoutmsg` output message to stdout or not, the existence of this parameter means that PLEK will be run quietly
  - `isrmtempfile` remove temporary files or not, the existence of this parameter means that PLEK programme will remove all temporary files
+<br>
 example
 ```bash
 LncPac -m PLEK -i example.fa -o results/PLEK_outfile
@@ -103,6 +105,7 @@ LncPac -m PLEK -i example.fa -o results/PLEK_outfile
  - `-p` or `--species` specify the species of the LncRNAs choose from `Human` `Mouse` `Fly` `Zebrafish` (note that the first character is upper case)
  - `-s` or `--start` Start codon (DNA sequence, so use 'T' instead of 'U') used to define open reading frame (ORF), default is ATG
  - `-t` or `--stop` Stop codon (DNA sequence, so use 'T' instead of 'U') used to define open reading frame (ORF). Multiple stop codons should be separated by ',' default is TAG,TAA,TGA
+<br>
 example
 ```bash
 LncPac -i example.fa -m CPAT -o results/CPAT_outfile -p Human
