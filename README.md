@@ -73,7 +73,7 @@ Individual model parameters
  - `--parallel` assign the running CUP numbers
 <br>
 
-example
+**example**
 ```bash
 LncPac -m CNCI -i example.fa -o results
 ```
@@ -86,7 +86,7 @@ LncPac -m CPC2 -i example.fa -o results/CPC2_outfile
 ```
 > lgc
 
-example
+**example**
 ```bash
 LncPac -m lgc -i example.fa -o results/lgc_outfile
 ```
@@ -95,10 +95,10 @@ LncPac -m lgc -i example.fa -o results/lgc_outfile
  - `--thread` the number of threads to run the PLEK programme
  - `-z` or `--size` minimum sequence size to consider, default is 200
  - `--isoutmsg` output message to stdout or not, the existence of this parameter means that PLEK will be run quietly
- - `isrmtempfile` remove temporary files or not, the existence of this parameter means that PLEK programme will remove all temporary files
+ - `--isrmtempfile` remove temporary files or not, the existence of this parameter means that PLEK programme will remove all temporary files
 <br>
 
-example
+**example**
 ```bash
 LncPac -m PLEK -i example.fa -o results/PLEK_outfile
 ```
@@ -109,10 +109,55 @@ LncPac -m PLEK -i example.fa -o results/PLEK_outfile
  - `-t` or `--stop` Stop codon (DNA sequence, so use 'T' instead of 'U') used to define open reading frame (ORF). Multiple stop codons should be separated by ',' default is TAG,TAA,TGA
 <br>
 
-example
+**example**
 ```bash
 LncPac -i example.fa -m CPAT -o results/CPAT_outfile -p Human
 ```
 >CPPred
 
- - 
+<br>
+
+**example**
+```bash
+LncPac -i example.fa -m CPAT -o results/CPAT_outfile -p Human
+```
+
+>longdist
+
+ - `--purge` purge all intermediate files.
+ - `-p` or `--species` choose a species type from `Human` `Mouse` `Zebrafish` (note that the first character is upper case)
+ - `-z` or `--size` minimum sequence size to consider, default is 200
+<br>
+
+**example**
+```bash
+LncPac -m longdist -i example.fa -p Human -o results/longdist_outfile
+```
+>PredLnc-GFStack
+
+ - `-p` or `--species` choose a species type from `Human` and `Mouse`
+<br>
+
+**example**
+
+```bash
+LncPac -i example.fa -m GFStack -o results/GFStack_outfile -p Human
+```
+
+>LncADeep
+ - `-mt` or `--modeltype` the model used for lncRNA identification, choose from `partial` `full` default is partial
+ - `-HMM` or `--HMMthread` the thread number of using HMMER, default is 8
+ - `-p` or `--species` choose a species from `human` `mouse`
+<br>
+
+**example**
+
+```bash
+LncPac -m LncADeep -i example.fa -o results/ -p human
+```
+
+
+##测试内容
+ - 测试参数
+ - 测试不同物种
+ - 测试1000条时间
