@@ -264,6 +264,17 @@ The test results are for reference only, and the specific values ​​depend on
 |PLEK|0m21.603s|1m30.905s|0m1.431s|
 |LncADeep|4m1.667s|6m12.511s|0m23.426s|
 
+Papers
+---------------------------------------------
+ - CNCI : *Utilizing sequence intrinsic composition to classify protein-coding and long non-coding transcripts*, Sun et al. (2013).
+ - CPC2 : *CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features*, Kang, J., et al. (2017).
+ - CPAT : *CPAT: Coding-Potential Assessment Tool using an alignment-free logistic regression model*, Wang et al. (2013).
+ - lgc : *Characterization and identification of long noncoding RNAs based on feature relationship*, Wang et al. (2019).
+ - CPPred : *CPPred: coding potential prediction based on the global description of RNA sequence*, Tong et al. (2019).
+ - GFStack : *PredLnc-GFStack: A Global Sequence Feature Based on a Stacked Ensemble Learning Method for Predicting lncRNAs from Transcripts*, Liu et al. (2019).
+ - longdist : *A Support Vector Machine based method to distinguish long non-coding RNAs from protein coding transcripts*, W.Schneider, H., et al. (2017).
+ - PLEK : *PLEK: a tool for predicting long non-coding RNAs and messenger RNAs based on an improved k-mer scheme*, Li, A., et al. (2014).
+ - LncADeep : *LncADeep: An ab initio lncRNA identification and annotation tool based on deep learning*, Yang et al. (2017).
 
 
 
