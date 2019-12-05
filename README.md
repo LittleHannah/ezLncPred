@@ -206,7 +206,7 @@ Individual model parameters
 >PredLnc-GFStack
 	-h --help		show this help message and exit
 	
-	-p --species	{human,mouse}
+	-p --species		{human,mouse}
 				choose a species type from Human and Mouse
 
 **example**
