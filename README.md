@@ -3,7 +3,7 @@
 
 
 
-*ezLncPred* is an comprehensive python package for LncRNA identification which integrate 9 state-of-the-art lncRNA prediction models. *ezLncPred* python package provides a convenient command line method for researchers who intends to identify LncRNA. The *ezLncPred* web server tool provides a straight-to-the-point answer for input fasta file, or an email for time-consuming identification task.
+*ezLncPred* is an comprehensive python package for LncRNA identification which integrates *9* state-of-the-art lncRNA prediction models. *ezLncPred* python package provides a convenient command line method for researchers who intends to identify lncRNAs. The *ezLncPred* web server tool provides a straight-to-the-point answer for input fasta file, or an email for time-consuming identification task.
 
 Integration
 ---------------------------------------------
@@ -32,7 +32,6 @@ Python package installation
  - Prerequisite
     - python 3.0 version (or above)
     - linux operating system
-    - Biopython
     - C/C++ compiler(for PLEK)
  - Download *ezLncPred* by
 
@@ -61,13 +60,13 @@ Usage
 *ezLncPred* offers a total of 9 LncRNA prediction models, each with a different variety of parameter choices, users can refer to the list below to customarize your prediction procedure.
 First, *ezLncPred* **must** receive at least three parameters to specify the `input file` `output directory` and `prediction model`
 
-	`-i` `--input`		fasta format input files
+	-i --input		fasta format input files
 	
-	`-o` `--output`		the output directory to store the identification results
+	-o --output		the output directory to store the identification results
 	
-	`-m` `--manual`		show manuals
+	-m --manual		show manuals
 	
-	`-v` `--version`	show program's version number and exit
+	-v --version	show program's version number and exit
 
 For example, run
 ```bash
@@ -80,12 +79,12 @@ Individual model parameters
 
 >CNCI
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`--parallel`		assign the running CUP numbers
+	--parallel		assign the running CUP numbers
 	
-	`-p {ve,pl}` `--species {ve,pl}`
-						assign the classification models ("ve" for vertebrate species, "pl" for plat species)
+	-p {ve,pl} --species {ve,pl}
+					assign the classification models ("ve" for vertebrate species, "pl" for plat species)
  
 **example**
 ```bash
@@ -97,10 +96,10 @@ Individual model parameters
 
 >CPC2
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`-r REVERSE` `--reverse`
-						REVERSE also check the reverse strand
+	-r REVERSE --reverse
+					REVERSE also check the reverse strand
 
 **example**
 ```bash
@@ -111,7 +110,7 @@ Individual model parameters
 
 >lgc
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 
 **example**
 ```bash
@@ -122,17 +121,17 @@ Individual model parameters
 
 >PLEK   
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`--thread`			the number of threads to run the PLEK programme
+	--thread		the number of threads to run the PLEK programme
 	
-	`--isoutmsg`		Output messages to stdout(screen) or not. "0" means 
-						that PLEK be run quietly. "1" means that PLEK outputs
-						the details of processing. Default value: 0
+	--isoutmsg		Output messages to stdout(screen) or not. "0" means 
+					that PLEK be run quietly. "1" means that PLEK outputs
+					the details of processing. Default value: 0
 					
-	`--isrmtempfile`	Remove temporary files or not. "0" means that PLEK 
-						retains temporary files. "1" means that PLEK remove 
-						temporary files. Default value: 1
+	--isrmtempfile	Remove temporary files or not. "0" means that PLEK 
+					retains temporary files. "1" means that PLEK remove 
+					temporary files. Default value: 1
 
 **example**
 ```bash
@@ -146,19 +145,19 @@ Individual model parameters
 
 >CPAT
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`-p` `--species`    {Human,Mouse,Fly,Zebrafish}
-						specify the species of the LncRNAs choose from Human 
-						Mouse Fly Zebrafish (note that the first character 
-						is upper case)
+	-p --species    {Human,Mouse,Fly,Zebrafish}
+					specify the species of the LncRNAs choose from Human 
+					Mouse Fly Zebrafish (note that the first character 
+					is upper case)
 					
-	`-s` `--start`		Start codon (DNA sequence, so use 'T' instead of 'U')
-						used to define open reading frame (ORF), default is ATG
+	-s --start		Start codon (DNA sequence, so use 'T' instead of 'U')
+					used to define open reading frame (ORF), default is ATG
 					
-	`-t` `--stop`		Stop codon (DNA sequence, so use 'T' instead of 'U')
-						used to define open reading frame (ORF). Multiple stop
-						codons should be separated by ',' default is TAG,TAA,TGA
+	-t --stop		Stop codon (DNA sequence, so use 'T' instead of 'U')
+					used to define open reading frame (ORF). Multiple stop
+					codons should be separated by ',' default is TAG,TAA,TGA
 
 **example**
 ```bash
@@ -172,10 +171,10 @@ Individual model parameters
 
 >CPPred
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`-p` `--species`	{Human,Integrated}
-						the model of the species to choose (Human,Integrated).
+	-p --species	{Human,Integrated}
+					the model of the species to choose (Human,Integrated).
 	
 **example**
 ```bash
@@ -187,13 +186,13 @@ Individual model parameters
 
 >longdist
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`-z <200>, --size <200>`
-						Minimun sequence size to consider. Default is 200.
+	-z <200>, --size <200>
+					Minimun sequence size to consider. Default is 200.
 
-	`-p` `--species`	{Human,Mouse}
-						the model of the species to choose (human,mouse).
+	-p --species	{Human,Mouse}
+					the model of the species to choose (human,mouse).
 
 **example**
 ```bash
@@ -205,10 +204,10 @@ Individual model parameters
 	
 
 >PredLnc-GFStack
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 	
-	`-p` `--species`	{human,mouse}
-						choose a species type from Human and Mouse
+	-p --species	{human,mouse}
+					choose a species type from Human and Mouse
 
 **example**
 ```bash
@@ -220,22 +219,22 @@ Individual model parameters
 
 >LncADeep
 
-	`-h` `--help`		show this help message and exit
+	-h --help		show this help message and exit
 
-	`-mt` `--modeltype`	{full,partial}
-						the model used for lncRNA identification,
-						choose from partial full default is partial
-						default is "partial".
+	-mt --modeltype	{full,partial}
+					the model used for lncRNA identification,
+					choose from partial full default is partial
+					default is "partial".
 					
-	`-HMM` `--HMMthread`
-						the thread number of using HMMER, default is 8
+	-HMM --HMMthread
+					the thread number of using HMMER, default is 8
 					
-	`-p` `--species`	{human,mouse}
-						the model of the species to choose (human,mouse).
-						default is "human".
+	-p --species	{human,mouse}
+					the model of the species to choose (human,mouse).
+					default is "human".
 
-	`-t` `--thread`		THREAD
-                    	The number of threads for running the LncADeep program.default is 8.
+	-t --thread	THREAD
+                    The number of threads for running the LncADeep program.default is 8.
 
 **example**
 ```bash
