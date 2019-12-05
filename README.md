@@ -84,7 +84,7 @@ Individual model parameters
 	--parallel		assign the running CUP numbers
 	
 	-p {ve,pl} --species {ve,pl}
-				assign the classification models ("ve" for vertebrate species, "pl" for plat species)
+					assign the classification models ("ve" for vertebrate species, "pl" for plat species)
  
 **example**
 ```bash
@@ -99,7 +99,7 @@ Individual model parameters
 	-h --help		show this help message and exit
 	
 	-r REVERSE --reverse
-				REVERSE also check the reverse strand
+					REVERSE also check the reverse strand
 
 **example**
 ```bash
@@ -126,12 +126,12 @@ Individual model parameters
 	--thread		the number of threads to run the PLEK programme
 	
 	--isoutmsg		Output messages to stdout(screen) or not. "0" means 
-				that PLEK be run quietly. "1" means that PLEK outputs
-				the details of processing. Default value: 0
+					that PLEK be run quietly. "1" means that PLEK outputs
+					the details of processing. Default value: 0
 					
-	--isrmtempfile		Remove temporary files or not. "0" means that PLEK 
-				retains temporary files. "1" means that PLEK remove 
-				temporary files. Default value: 1
+	--isrmtempfile	Remove temporary files or not. "0" means that PLEK 
+					retains temporary files. "1" means that PLEK remove 
+					temporary files. Default value: 1
 
 **example**
 ```bash
@@ -147,17 +147,17 @@ Individual model parameters
 
 	-h --help		show this help message and exit
 	
-	-p --species    	{Human,Mouse,Fly,Zebrafish}
-				specify the species of the LncRNAs choose from Human 
-				Mouse Fly Zebrafish (note that the first character 
-				is upper case)
+	-p --species    {Human,Mouse,Fly,Zebrafish}
+					specify the species of the LncRNAs choose from Human 
+					Mouse Fly Zebrafish (note that the first character 
+					is upper case)
 					
 	-s --start		Start codon (DNA sequence, so use 'T' instead of 'U')
-				used to define open reading frame (ORF), default is ATG
+					used to define open reading frame (ORF), default is ATG
 					
 	-t --stop		Stop codon (DNA sequence, so use 'T' instead of 'U')
-				used to define open reading frame (ORF). Multiple stop
-				codons should be separated by ',' default is TAG,TAA,TGA
+					used to define open reading frame (ORF). Multiple stop
+					codons should be separated by ',' default is TAG,TAA,TGA
 
 **example**
 ```bash
@@ -173,8 +173,8 @@ Individual model parameters
 
 	-h --help		show this help message and exit
 	
-	-p --species		{Human,Integrated}
-				the model of the species to choose (Human,Integrated).
+	-p --species	{Human,Integrated}
+					the model of the species to choose (Human,Integrated).
 	
 **example**
 ```bash
@@ -189,10 +189,10 @@ Individual model parameters
 	-h --help		show this help message and exit
 	
 	-z <200>, --size <200>
-				Minimun sequence size to consider. Default is 200.
+					Minimun sequence size to consider. Default is 200.
 
 	-p --species	{Human,Mouse}
-				the model of the species to choose (human,mouse).
+					the model of the species to choose (human,mouse).
 
 **example**
 ```bash
@@ -206,8 +206,8 @@ Individual model parameters
 >PredLnc-GFStack
 	-h --help		show this help message and exit
 	
-	-p --species		{human,mouse}
-				choose a species type from Human and Mouse
+	-p --species	{human,mouse}
+					choose a species type from Human and Mouse
 
 **example**
 ```bash
@@ -222,19 +222,19 @@ Individual model parameters
 	-h --help		show this help message and exit
 
 	-mt --modeltype	{full,partial}
-				the model used for lncRNA identification,
-				choose from partial full default is partial
-				default is "partial".
+					the model used for lncRNA identification,
+					choose from partial full default is partial
+					default is "partial".
 					
 	-HMM --HMMthread
-				the thread number of using HMMER, default is 8
+					the thread number of using HMMER, default is 8
 					
 	-p --species	{human,mouse}
-				the model of the species to choose (human,mouse).
-				default is "human".
+					the model of the species to choose (human,mouse).
+					default is "human".
 
 	-t --thread	THREAD
-                    		The number of threads for running the LncADeep program.default is 8.
+                    The number of threads for running the LncADeep program.default is 8.
 
 **example**
 ```bash
@@ -245,4 +245,40 @@ Individual model parameters
 	ezLncPred -i example.fa -o results LncADeep -p human
 	ezLncPred -i example.fa -o results LncADeep -t 4
 ```
+
+Test case
+---------------------------------------------
+We used lncRNA fasta file (1.0M) to test the cost time of prediction by each model. 
+We run the default command without any additional parameters on *Intel(R) Xeon(R) Gold 6146 CPU @ 3.20GHz*.
+The test results are for reference only, and the specific values ​​depend on the specific situation.
+
+| Model | Real Time | User Time | Sys Time |
+|:-----:|:---------:|:---------:|:--------:|
+|CNCI|2m14.578s|2m13.992s|0m0.335s|
+|CPC2|0m1.928s|0m1.756s|0m0.163s|
+|CPAT|0m2.076s|0m1.896s|0m0.182s|
+|lgc|0m1.640s|0m1.476s|0m0.162s|
+|CPPred|0m13.973s|0m13.767s|0m0.200s|
+|GFStack|0m44.763s|4m35.646s|0m14.584s|
+|longdist|0m2.689s|0m2.569s|0m0.119s|
+|PLEK|0m21.603s|1m30.905s|0m1.431s|
+|LncADeep|4m1.667s|6m12.511s|0m23.426s|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
