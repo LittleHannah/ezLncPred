@@ -66,7 +66,7 @@ First, *ezLncPred* **must** receive at least three parameters to specify the `in
 	
 	-m --manual		show manuals
 	
-	-v --version	show program's version number and exit
+	-v --version		show program's version number and exit
 
 For example, run
 ```bash
@@ -204,6 +204,7 @@ Individual model parameters
 	
 
 >PredLnc-GFStack
+
 	-h --help		show this help message and exit
 	
 	-p --species		{human,mouse}
