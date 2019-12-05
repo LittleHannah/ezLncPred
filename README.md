@@ -84,7 +84,7 @@ Individual model parameters
 	--parallel		assign the running CUP numbers
 	
 	-p {ve,pl} --species {ve,pl}
-					assign the classification models ("ve" for vertebrate species, "pl" for plat species)
+				assign the classification models ("ve" for vertebrate species, "pl" for plat species)
  
 **example**
 ```bash
@@ -99,7 +99,7 @@ Individual model parameters
 	-h --help		show this help message and exit
 	
 	-r REVERSE --reverse
-					REVERSE also check the reverse strand
+				REVERSE also check the reverse strand
 
 **example**
 ```bash
@@ -126,12 +126,12 @@ Individual model parameters
 	--thread		the number of threads to run the PLEK programme
 	
 	--isoutmsg		Output messages to stdout(screen) or not. "0" means 
-					that PLEK be run quietly. "1" means that PLEK outputs
-					the details of processing. Default value: 0
+				that PLEK be run quietly. "1" means that PLEK outputs
+				the details of processing. Default value: 0
 					
-	--isrmtempfile	Remove temporary files or not. "0" means that PLEK 
-					retains temporary files. "1" means that PLEK remove 
-					temporary files. Default value: 1
+	--isrmtempfile		Remove temporary files or not. "0" means that PLEK 
+				retains temporary files. "1" means that PLEK remove 
+				temporary files. Default value: 1
 
 **example**
 ```bash
@@ -147,17 +147,17 @@ Individual model parameters
 
 	-h --help		show this help message and exit
 	
-	-p --species    {Human,Mouse,Fly,Zebrafish}
-					specify the species of the LncRNAs choose from Human 
-					Mouse Fly Zebrafish (note that the first character 
-					is upper case)
+	-p --species    	{Human,Mouse,Fly,Zebrafish}
+				specify the species of the LncRNAs choose from Human 
+				Mouse Fly Zebrafish (note that the first character 
+				is upper case)
 					
 	-s --start		Start codon (DNA sequence, so use 'T' instead of 'U')
-					used to define open reading frame (ORF), default is ATG
+				used to define open reading frame (ORF), default is ATG
 					
 	-t --stop		Stop codon (DNA sequence, so use 'T' instead of 'U')
-					used to define open reading frame (ORF). Multiple stop
-					codons should be separated by ',' default is TAG,TAA,TGA
+				used to define open reading frame (ORF). Multiple stop
+				codons should be separated by ',' default is TAG,TAA,TGA
 
 **example**
 ```bash
@@ -173,8 +173,8 @@ Individual model parameters
 
 	-h --help		show this help message and exit
 	
-	-p --species	{Human,Integrated}
-					the model of the species to choose (Human,Integrated).
+	-p --species		{Human,Integrated}
+				the model of the species to choose (Human,Integrated).
 	
 **example**
 ```bash
@@ -189,10 +189,10 @@ Individual model parameters
 	-h --help		show this help message and exit
 	
 	-z <200>, --size <200>
-					Minimun sequence size to consider. Default is 200.
+				Minimun sequence size to consider. Default is 200.
 
 	-p --species	{Human,Mouse}
-					the model of the species to choose (human,mouse).
+				the model of the species to choose (human,mouse).
 
 **example**
 ```bash
@@ -206,8 +206,8 @@ Individual model parameters
 >PredLnc-GFStack
 	-h --help		show this help message and exit
 	
-	-p --species	{human,mouse}
-					choose a species type from Human and Mouse
+	-p --species		{human,mouse}
+				choose a species type from Human and Mouse
 
 **example**
 ```bash
@@ -222,19 +222,19 @@ Individual model parameters
 	-h --help		show this help message and exit
 
 	-mt --modeltype	{full,partial}
-					the model used for lncRNA identification,
-					choose from partial full default is partial
-					default is "partial".
+				the model used for lncRNA identification,
+				choose from partial full default is partial
+				default is "partial".
 					
 	-HMM --HMMthread
-					the thread number of using HMMER, default is 8
+				the thread number of using HMMER, default is 8
 					
 	-p --species	{human,mouse}
-					the model of the species to choose (human,mouse).
-					default is "human".
+				the model of the species to choose (human,mouse).
+				default is "human".
 
 	-t --thread	THREAD
-                    The number of threads for running the LncADeep program.default is 8.
+                    		The number of threads for running the LncADeep program.default is 8.
 
 **example**
 ```bash
@@ -266,15 +266,15 @@ The test results are for reference only, and the specific values ​​depend on
 
 Papers
 ---------------------------------------------
- - CNCI : *Utilizing sequence intrinsic composition to classify protein-coding and long non-coding transcripts*, Sun et al. (2013).
- - CPC2 : *CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features*, Kang, J., et al. (2017).
- - CPAT : *CPAT: Coding-Potential Assessment Tool using an alignment-free logistic regression model*, Wang et al. (2013).
- - lgc : *Characterization and identification of long noncoding RNAs based on feature relationship*, Wang et al. (2019).
- - CPPred : *CPPred: coding potential prediction based on the global description of RNA sequence*, Tong et al. (2019).
- - GFStack : *PredLnc-GFStack: A Global Sequence Feature Based on a Stacked Ensemble Learning Method for Predicting lncRNAs from Transcripts*, Liu et al. (2019).
- - longdist : *A Support Vector Machine based method to distinguish long non-coding RNAs from protein coding transcripts*, W.Schneider, H., et al. (2017).
- - PLEK : *PLEK: a tool for predicting long non-coding RNAs and messenger RNAs based on an improved k-mer scheme*, Li, A., et al. (2014).
- - LncADeep : *LncADeep: An ab initio lncRNA identification and annotation tool based on deep learning*, Yang et al. (2017).
+ - CNCI : *“Utilizing sequence intrinsic composition to classify protein-coding and long non-coding transcripts”*, Sun et al. (2013).
+ - CPC2 : *“CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features”*, Kang, J., et al. (2017).
+ - CPAT : *“CPAT: Coding-Potential Assessment Tool using an alignment-free logistic regression model”*, Wang et al. (2013).
+ - lgc : *“Characterization and identification of long noncoding RNAs based on feature relationship”*, Wang et al. (2019).
+ - CPPred : *“CPPred: coding potential prediction based on the global description of RNA sequence”*, Tong et al. (2019).
+ - GFStack : *“PredLnc-GFStack: A Global Sequence Feature Based on a Stacked Ensemble Learning Method for Predicting lncRNAs from Transcripts”*, Liu et al. (2019).
+ - longdist : *“A Support Vector Machine based method to distinguish long non-coding RNAs from protein coding transcripts”*, W.Schneider, H., et al. (2017).
+ - PLEK : *“PLEK: a tool for predicting long non-coding RNAs and messenger RNAs based on an improved k-mer scheme”*, Li, A., et al. (2014).
+ - LncADeep : *“LncADeep: An ab initio lncRNA identification and annotation tool based on deep learning”*, Yang et al. (2017).
 
 
 
