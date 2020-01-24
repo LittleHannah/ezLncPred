@@ -1,5 +1,5 @@
 
-# ***ezLncPred***: An integrated python package and web server for LncRNA identification
+# ***ezLncPred***: ezLncPred: A Python package with integrated lncRNA prediction methods
 
 
 
