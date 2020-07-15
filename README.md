@@ -1,5 +1,5 @@
 
-# ***ezLncPred***: ezLncPred: A Python package with integrated lncRNA prediction methods
+# ***ezLncPred***: A Python package with integrated lncRNA prediction methods
 
 
 
